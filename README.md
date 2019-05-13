@@ -5,6 +5,7 @@
 
 - This app is a official app of YackeenSolutions, where i had an internship.
 - I was asked to rebuild it as a part of the internship.
+-	It provides a service of toys shopping. 
 - I made some changes in the design and code style.
 - This app is written in kotlin.
 
