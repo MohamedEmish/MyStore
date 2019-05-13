@@ -8,6 +8,16 @@
 - I made some changes in the design and code style.
 - This app is written in kotlin.
 
+# Liberaries used
+
+- [Kotlin programing language](#kotlin-stdlib-jdk7:1.3.31)
+- [Rx-Java](#rxjava:2.1.9)
+- [Retrofit](#Retrofit 2.5.0)
+- [AutoDimension](#AutoDimension:1.0.4)
+- [Facebook](#facebook-login:4.41.0)
+- [MVVM design pattern](#lifecycle-viewmodel:2.0.0)
+- [Glide](#glide:4.9.0)
+- [GIF](#android-gif-drawable:1.2.15)
 
 # Screenshots
 
@@ -18,19 +28,6 @@
 <img src ="Pics/9.jpg" height = 500><img src ="Pics/10.jpg" height = 500>
 <img src ="Pics/11.jpg" height = 500><img src ="Pics/12.jpg" height = 500>
 <img src ="Pics/13.jpg" height = 500><img src ="Pics/20.jpg" height = 500>
-
-# Liberaries used
-
-
-- [Kotlin programing language](#kotlin-stdlib-jdk7:1.3.31)
-- [Retrofit](#Retrofit 2.5.0)
-- [AutoDimension](#AutoDimension:1.0.4)
-- [Facebook](#facebook-login:4.41.0)
-- [MVVM design pattern](#lifecycle-viewmodel:2.0.0)
-- [Glide](#glide:4.9.0)
-- [GIF](#android-gif-drawable:1.2.15)
-- [Rx-Java](#rxjava:2.1.9)
-
 
 ## Support
 
