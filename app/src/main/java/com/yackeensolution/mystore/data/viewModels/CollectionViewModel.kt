@@ -10,7 +10,6 @@ import com.yackeensolution.mystore.models.AboutUsResponse
 import com.yackeensolution.mystore.models.ContactUsRequest
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.functions.Consumer
 import io.reactivex.schedulers.Schedulers
 import okhttp3.ResponseBody
 import retrofit2.Call
@@ -29,9 +28,9 @@ class CollectionViewModel(application: Application) : AndroidViewModel(applicati
                     retrofitClass.aboutUs
                             .subscribeOn(Schedulers.io())
                             .observeOn(AndroidSchedulers.mainThread())
-                            .subscribe(Consumer<AboutUsResponse> { aboutUs ->
+                            .subscribe { aboutUs ->
                                 data.setValue(aboutUs)
-                            }))
+                            })
             return data
         }
 

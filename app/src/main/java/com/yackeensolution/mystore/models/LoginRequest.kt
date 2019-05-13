@@ -14,5 +14,5 @@ class LoginRequest {
 
     @SerializedName("DeviceToken")
     @Expose
-    var deviceToken: String = ""
+    var deviceToken: String = "string"
 }

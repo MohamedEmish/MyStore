@@ -32,7 +32,7 @@ class CategoryAdapter(private val mContext: Context?) : ListAdapter<Category, Ca
         val title = getItem(position).title
         val imageUri = getItem(position).imageUrl
 
-        if (!imageUri.equals("")) {
+        if (imageUri != "") {
             Glide.with(holder.categoryImageVew)
                     .load("http://yakensolution.cloudapp.net/talentadmin/Content/images/" + getItem(position).imageUrl)
                     .transition(DrawableTransitionOptions.withCrossFade())
@@ -42,11 +42,6 @@ class CategoryAdapter(private val mContext: Context?) : ListAdapter<Category, Ca
         holder.titleTextView.text = title
 
     }
-
-    private fun getMemberAt(position: Int): Category {
-        return getItem(position)
-    }
-
 
     fun setOnItemClickListener(listener: OnItemClickListener) {
         this.listener = listener
@@ -58,16 +53,12 @@ class CategoryAdapter(private val mContext: Context?) : ListAdapter<Category, Ca
 
     inner class CategoryViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var titleTextView: TextView
-        var categoryImageVew: ImageView
-        var layout: LinearLayout
+        var titleTextView: TextView = itemView.findViewById(R.id.tv_category_title)
+        var categoryImageVew: ImageView = itemView.findViewById(R.id.iv_category_image)
+        var layout: LinearLayout = itemView.findViewById(R.id.layout_category_item)
 
         init {
 
-            titleTextView = itemView.findViewById(R.id.tv_category_title)
-            categoryImageVew = itemView.findViewById(R.id.iv_category_image)
-
-            layout = itemView.findViewById(R.id.layout_category_item)
             layout.setOnClickListener {
                 val position = adapterPosition
                 if (listener != null && position != RecyclerView.NO_POSITION) {

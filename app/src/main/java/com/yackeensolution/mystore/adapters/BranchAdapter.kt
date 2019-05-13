@@ -4,7 +4,6 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.DiffUtil
@@ -39,11 +38,6 @@ class BranchAdapter(private val mContext: Context?) : ListAdapter<Branch, Branch
 
     }
 
-    private fun getMemberAt(position: Int): Branch {
-        return getItem(position)
-    }
-
-
     fun setOnItemClickListener(listener: OnItemClickListener) {
         this.listener = listener
     }
@@ -54,21 +48,13 @@ class BranchAdapter(private val mContext: Context?) : ListAdapter<Branch, Branch
 
     inner class BranchViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var nameTV: TextView
-        var startAtTV: TextView
-        var endAtTV: TextView
-        var addressTV: TextView
-        var imageView: ImageView
-        var layout: ConstraintLayout
+        var nameTV: TextView = itemView.findViewById(R.id.tv_branch_name)
+        var startAtTV: TextView = itemView.findViewById(R.id.tv_start_at)
+        var endAtTV: TextView = itemView.findViewById(R.id.tv_end_at)
+        var addressTV: TextView = itemView.findViewById(R.id.tv_branch_address)
+        var layout: ConstraintLayout = itemView.findViewById(R.id.branch_layout)
 
         init {
-
-            nameTV = itemView.findViewById(R.id.tv_branch_name)
-            startAtTV = itemView.findViewById(R.id.tv_start_at)
-            endAtTV = itemView.findViewById(R.id.tv_end_at)
-            addressTV = itemView.findViewById(R.id.tv_branch_address)
-            imageView = itemView.findViewById(R.id.iv_branch_map)
-            layout = itemView.findViewById(R.id.branch_layout)
             layout.setOnClickListener {
                 val position = adapterPosition
                 if (listener != null && position != RecyclerView.NO_POSITION) {

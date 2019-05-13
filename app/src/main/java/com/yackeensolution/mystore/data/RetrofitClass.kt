@@ -3,8 +3,8 @@ package com.yackeensolution.mystore.data
 import android.content.Context
 import com.google.gson.GsonBuilder
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
-import com.yackeensolution.mystore.SaveSharedPreference
 import com.yackeensolution.mystore.models.*
+import com.yackeensolution.mystore.utils.SaveSharedPreference
 import io.reactivex.Observable
 import io.reactivex.Single
 import okhttp3.OkHttpClient
@@ -36,11 +36,6 @@ class RetrofitClass {
     fun getAllCategories(context: Context): Observable<List<Category>> {
         val storeApi = storeApi
         return storeApi.getAllCategories(SaveSharedPreference.getLanguage(context)!!)
-    }
-
-    fun getCategories(context: Context): Call<List<Category>> {
-        val storeApi = storeApi
-        return storeApi.getCategories(SaveSharedPreference.getLanguage(context)!!)
     }
 
     fun getCategoryProduct(context: Context, categoryId: Int): Observable<List<Product>> {
@@ -132,24 +127,6 @@ class RetrofitClass {
                 SaveSharedPreference.getLanguage(context),
                 key)
     }
-
-
-    val ages: Call<List<Age>>
-        get() {
-            val storeApi = storeApi
-            return storeApi.ages
-        }
-
-    fun getIntelligence(context: Context): Call<List<Intelligence>> {
-        val storeApi = storeApi
-        return storeApi.getIntelligence(SaveSharedPreference.getLanguage(context))
-    }
-
-    val numberOfPlayersId: Call<List<NumberOfPlayers>>
-        get() {
-            val storeApi = storeApi
-            return storeApi.numberOfPlayers
-        }
 
 
     /////////////////////////////////////////////////////////////////////////////////////////////////////

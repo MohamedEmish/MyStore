@@ -45,17 +45,9 @@ class NewsAdapter(private val mContext: Context?) : ListAdapter<News, NewsAdapte
 
     inner class NewsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var mNewsImage: ImageView
-        var mNewsTitle: TextView
-        var mNewsDescription: TextView
-
-        init {
-            mNewsImage = itemView.findViewById(R.id.iv_my_review_product_image)
-            mNewsTitle = itemView.findViewById(R.id.tv_my_review_title)
-            mNewsDescription = itemView.findViewById(R.id.tv_offer_description)
-
-
-        }
+        var mNewsImage: ImageView = itemView.findViewById(R.id.iv_my_review_product_image)
+        var mNewsTitle: TextView = itemView.findViewById(R.id.tv_my_review_title)
+        var mNewsDescription: TextView = itemView.findViewById(R.id.tv_offer_description)
 
     }
 

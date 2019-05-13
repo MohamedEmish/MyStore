@@ -9,7 +9,6 @@ import com.yackeensolution.mystore.data.RetrofitClass
 import com.yackeensolution.mystore.models.Offer
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.functions.Consumer
 import io.reactivex.schedulers.Schedulers
 
 class OffersViewModel(application: Application) : AndroidViewModel(application) {
@@ -23,9 +22,9 @@ class OffersViewModel(application: Application) : AndroidViewModel(application) 
                 retrofitClass.getOffers(context)
                         .subscribeOn(Schedulers.io())
                         .observeOn(AndroidSchedulers.mainThread())
-                        .subscribe(Consumer<List<Offer>> { offers ->
+                        .subscribe { offers ->
                             data.setValue(offers)
-                        }))
+                        })
         return data
     }
 

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Talent Store</string>
-    <string name="search">بحث</string>
     <string name="enter_name">اسم المنتج/ الكود</string>
     <string name="home">الرئيسية</string>
     <string name="news">الأخبار</string>
@@ -44,10 +43,8 @@
     <string name="my_reviews">تقييماتي</string>
     <string name="my_profile">حسابي</string>
     <string name="logout">تسجيل الخروج</string>
-    <string name="title_activity_settings">Settings</string>
     <string name="english">إنجليزي</string>
     <string name="arabic">عربي</string>
-    <string name="select_your_language">اختر لغتك</string>
     <string name="cart">حقيبة المشتريات</string>
     <string name="delete">إزالة</string>
     <string name="total">الحساب:</string>
@@ -62,7 +59,6 @@
     <string name="no_offers">للأسف، ليس لدينا أية عروض الآن.</string>
     <string name="are_you_sure">هل أنت متأكد؟</string>
     <string name="ok">حسناً</string>
-    <string name="no">لا</string>
     <string name="you_need_to_login_first">تحتاج لتسجيل الدخول أولا.ً</string>
     <string name="yes">نعم</string>
     <string name="cancel">إلغاء</string>
@@ -72,8 +68,6 @@
     <string name="name">الإسم</string>
     <string name="code">الكود:</string>
     <string name="myReviews">تقييمات</string>
-    <string name="source">المصدر:</string>
-    <string name="talent_store">Talent Store</string>
     <string name="times">مرات</string>
     <string name="add_to_cart">أضف إلى حقيبة المشتريات</string>
     <string name="title_placeholder">هذا المكان الذي يكون فيه العنوان. هل أعجبك؟</string>
@@ -99,10 +93,8 @@
     <string name="final_price">السعر النهائي</string>
     <string name="confirmation_note">أحد أعضاء فريقنا سيتواصل معك لتأكيد ميعاد التوصيل</string>
     <string name="delivery_address">عنوان التوصيل</string>
-    <string name="notes">ملاحظات</string>
     <string name="no_filtered_products">للأسف، لا توجد منتجات بهذه المواصفات</string>
     <string name="something_went_wrong">حدث خطأ ما. من فضلك حاول مرة أخرى.</string>
-    <string name="no_internet_connection">تأكد من اتصالك بالإنترنت وحاول مجدداً.</string>
     <string name="delivery_notes">ملاحظات التوصيل</string>
     <string name="order_number">طلب رقم:</string>
     <string name="order_details">تفاصيل الطلب</string>
@@ -147,7 +139,5 @@
     <string name="facebook_app_id">408089943083699</string>
     <string name="fb_login_protocol_scheme">fb408089943083699</string>
     <string name="edit_text_error">من فضلك ادخل البيانات</string>
-    <string name="some_text">بعض الكلمات</string>
-    <string name="reviews">التقارير</string>
 
 </resources>

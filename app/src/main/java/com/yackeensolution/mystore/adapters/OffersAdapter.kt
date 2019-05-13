@@ -44,19 +44,11 @@ class OffersAdapter(private val mContext: Context?) : ListAdapter<Offer, OffersA
 
     inner class OfferViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var mOfferImage: ImageView
-        var mOfferTitle: TextView
-        var mOfferDescription: TextView
-        var mOfferDiscount: TextView
+        var mOfferImage: ImageView = itemView.findViewById(R.id.iv_my_review_product_image)
+        var mOfferTitle: TextView = itemView.findViewById(R.id.tv_my_review_title)
+        var mOfferDescription: TextView = itemView.findViewById(R.id.tv_offer_description)
+        var mOfferDiscount: TextView = itemView.findViewById(R.id.tv_discount)
 
-        init {
-            mOfferImage = itemView.findViewById(R.id.iv_my_review_product_image)
-            mOfferTitle = itemView.findViewById(R.id.tv_my_review_title)
-            mOfferDescription = itemView.findViewById(R.id.tv_offer_description)
-            mOfferDiscount = itemView.findViewById(R.id.tv_discount)
-
-
-        }
     }
 
     companion object {

@@ -57,21 +57,12 @@ class MyReviewsAdapter(private val mContext: Context?) : ListAdapter<MyReview, M
 
     inner class MyReviewViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var reviewImage: ImageView
-        var reviewTitle: TextView
-        var reviewBody: TextView
-        var productTitle: TextView
-        var ratingBar: RatingBar
+        var reviewImage: ImageView = itemView.findViewById(R.id.iv_my_review_product_image)
+        var reviewTitle: TextView = itemView.findViewById(R.id.tv_my_review_title)
+        var reviewBody: TextView = itemView.findViewById(R.id.tv_my_review_body)
+        var productTitle: TextView = itemView.findViewById(R.id.tv_my_review_product_title)
+        var ratingBar: RatingBar = itemView.findViewById(R.id.rb_my_review)
 
-        init {
-            reviewImage = itemView.findViewById(R.id.iv_my_review_product_image)
-            reviewTitle = itemView.findViewById(R.id.tv_my_review_title)
-            reviewBody = itemView.findViewById(R.id.tv_my_review_body)
-            productTitle = itemView.findViewById(R.id.tv_my_review_product_title)
-            ratingBar = itemView.findViewById(R.id.rb_my_review)
-
-
-        }
     }
 
     companion object {

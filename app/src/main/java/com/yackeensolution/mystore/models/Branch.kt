@@ -19,11 +19,11 @@ class Branch {
 
     @SerializedName("Lang")
     @Expose
-    var lang: Float = 0.0f
+    var lang: Double = 0.0
 
     @SerializedName("Lat")
     @Expose
-    var lat: Float = 0.0f
+    var lat: Double = 0.0
 
     @SerializedName("Id")
     @Expose

@@ -61,10 +61,6 @@ class ProductsAdapter(private val mContext: Context?) : ListAdapter<Product, Pro
 
     }
 
-    private fun getMemberAt(position: Int): Product {
-        return getItem(position)
-    }
-
     fun setOnItemClickListener(listener: OnItemClickListener) {
         this.listener = listener
     }
@@ -91,20 +87,15 @@ class ProductsAdapter(private val mContext: Context?) : ListAdapter<Product, Pro
 
     inner class ProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var layout: ConstraintLayout
-        var productImageView: ImageView
-        var productTitle: TextView
-        var ratingBar: RatingBar
-        var productPrice: TextView
-        var favoriteIndicator: ImageView
+        var productImageView: ImageView = itemView.findViewById(R.id.iv_product_image)
+        var productTitle: TextView = itemView.findViewById(R.id.tv_product_title)
+        var ratingBar: RatingBar = itemView.findViewById(R.id.one_product_rating_bar)
+        var productPrice: TextView = itemView.findViewById(R.id.tv_product_price)
+        var favoriteIndicator: ImageView = itemView.findViewById(R.id.iv_favourite)
         var addToCartIv: ImageView
 
         init {
-            productImageView = itemView.findViewById(R.id.iv_product_image)
-            productTitle = itemView.findViewById(R.id.tv_product_title)
-            ratingBar = itemView.findViewById(R.id.one_product_rating_bar)
-            productPrice = itemView.findViewById(R.id.tv_product_price)
 
-            favoriteIndicator = itemView.findViewById(R.id.iv_favourite)
             favoriteIndicator.setOnClickListener {
                 val position = adapterPosition
                 if (favListener != null && position != RecyclerView.NO_POSITION) {

@@ -10,7 +10,6 @@ import com.yackeensolution.mystore.data.RetrofitClass
 import com.yackeensolution.mystore.models.Category
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.functions.Consumer
 import io.reactivex.schedulers.Schedulers
 
 class CategoryViewModel(application: Application) : AndroidViewModel(application) {
@@ -24,9 +23,9 @@ class CategoryViewModel(application: Application) : AndroidViewModel(application
                 retrofitClass.getAllCategories(context)
                         .subscribeOn(Schedulers.io())
                         .observeOn(AndroidSchedulers.mainThread())
-                        .subscribe(Consumer<List<Category>> { categories ->
+                        .subscribe { categories ->
                             data.setValue(categories)
-                        }))
+                        })
         return data
     }
 

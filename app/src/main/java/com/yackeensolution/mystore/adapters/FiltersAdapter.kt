@@ -46,15 +46,13 @@ class FiltersAdapter(private val mContext: Context?) : ListAdapter<String, Filte
 
     inner class StringViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var mDeleteImageView: ImageView
-        var mFilterTextView: TextView
+        var mDeleteImageView: ImageView = itemView.findViewById(R.id.iv_delete_filter)
+        var mFilterTextView: TextView = itemView.findViewById(R.id.tv_filter_result)
 
         init {
-            mDeleteImageView = itemView.findViewById(R.id.iv_delete_filter)
-            mFilterTextView = itemView.findViewById(R.id.tv_filter_result)
 
 
-            mDeleteImageView.setOnClickListener { v ->
+            mDeleteImageView.setOnClickListener {
                 if (listener != null) {
                     val position = adapterPosition
                     if (listener != null && position != RecyclerView.NO_POSITION) {

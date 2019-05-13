@@ -48,16 +48,13 @@ class MyOrdersAdapter(private val mContext: Context?) : ListAdapter<Order, MyOrd
 
     inner class OrderViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var orderId: TextView
-        var orderDate: TextView
-        var orderStatus: TextView
+        var orderId: TextView = itemView.findViewById(R.id.tv_order_id)
+        var orderDate: TextView = itemView.findViewById(R.id.tv_order_date)
+        var orderStatus: TextView = itemView.findViewById(R.id.tv_order_status)
 
         init {
-            orderId = itemView.findViewById(R.id.tv_order_id)
-            orderDate = itemView.findViewById(R.id.tv_order_date)
-            orderStatus = itemView.findViewById(R.id.tv_order_status)
 
-            itemView.setOnClickListener { v ->
+            itemView.setOnClickListener {
                 if (listener != null) {
                     val position = adapterPosition
                     if (listener != null && position != RecyclerView.NO_POSITION) {

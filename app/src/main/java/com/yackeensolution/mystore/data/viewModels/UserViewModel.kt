@@ -2,6 +2,7 @@ package com.yackeensolution.mystore.data.viewModels
 
 import android.app.Application
 import android.content.Context
+import android.widget.Toast
 import androidx.annotation.NonNull
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
@@ -49,17 +50,17 @@ class UserViewModel(application: Application) : AndroidViewModel(application) {
         return data
     }
 
-    fun updateUser(updateUserRequest: UpdateUserRequest): LiveData<User> {
-        val data = MutableLiveData<User>()
+    fun updateUser(context: Context, updateUserRequest: UpdateUserRequest): LiveData<String> {
+        val data = MutableLiveData<String>()
         retrofitClass.updateUser(updateUserRequest).enqueue(object : Callback<User> {
             override fun onResponse(@NonNull call: Call<User>, @NonNull response: Response<User>) {
                 if (response.isSuccessful) {
-                    data.value = response.body()
+                    data.value = "Ok"
+                    Toast.makeText(context, "response.isSuccessful", Toast.LENGTH_SHORT).show()
                 }
             }
-
             override fun onFailure(@NonNull call: Call<User>, @NonNull t: Throwable) {
-                data.value = null
+                data.value = "NOT OK"
             }
         })
         return data

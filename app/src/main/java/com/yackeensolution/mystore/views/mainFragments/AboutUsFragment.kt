@@ -14,9 +14,9 @@ import androidx.lifecycle.ViewModelProviders
 import com.yackeensolution.mystore.R
 import com.yackeensolution.mystore.data.viewModels.CollectionViewModel
 import com.yackeensolution.mystore.models.AboutUsResponse
-import com.yackeensolution.mystore.views.AboutUsActivity
-import com.yackeensolution.mystore.views.BranchesActivity
-import com.yackeensolution.mystore.views.ContactUsActivity
+import com.yackeensolution.mystore.views.aboutUsTabActivities.AboutUsActivity
+import com.yackeensolution.mystore.views.aboutUsTabActivities.BranchesActivity
+import com.yackeensolution.mystore.views.aboutUsTabActivities.ContactUsActivity
 
 class AboutUsFragment : Fragment() {
     private var facebook: ImageView? = null

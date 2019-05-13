@@ -17,12 +17,17 @@ import androidx.core.view.ViewCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.yackeensolution.mystore.LoginDialog
 import com.yackeensolution.mystore.R
-import com.yackeensolution.mystore.SaveSharedPreference
 import com.yackeensolution.mystore.data.viewModels.UserViewModel
 import com.yackeensolution.mystore.models.LogoutRequest
-import com.yackeensolution.mystore.views.*
+import com.yackeensolution.mystore.utils.LoginDialog
+import com.yackeensolution.mystore.utils.SaveSharedPreference
+import com.yackeensolution.mystore.views.logActivities.LoginActivity
+import com.yackeensolution.mystore.views.logActivities.MainActivity
+import com.yackeensolution.mystore.views.meTabActivities.MyFavouritesActivity
+import com.yackeensolution.mystore.views.meTabActivities.MyOrdersActivity
+import com.yackeensolution.mystore.views.meTabActivities.MyProfileActivity
+import com.yackeensolution.mystore.views.meTabActivities.MyReviewsActivity
 
 class MeFragment : Fragment() {
     private var loginButton: Button? = null
@@ -128,7 +133,7 @@ class MeFragment : Fragment() {
         private var cancelButton: Button? = null
         private var mainContainer: View? = null
 
-        override fun onCreate(savedInstanceState: Bundle) {
+        override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             requestWindowFeature(Window.FEATURE_NO_TITLE)
             setContentView(R.layout.dialog_logout)

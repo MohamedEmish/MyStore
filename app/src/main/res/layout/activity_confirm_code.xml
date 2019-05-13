@@ -5,7 +5,7 @@
     android:id="@+id/confirm_code_main_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.ForgetPasswordActivity">
+    tools:context=".views.logActivities.ForgetPasswordActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

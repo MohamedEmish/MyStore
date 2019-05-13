@@ -15,7 +15,7 @@ import com.yackeensolution.mystore.R
 import com.yackeensolution.mystore.adapters.CategoryAdapter
 import com.yackeensolution.mystore.data.viewModels.CategoryViewModel
 import com.yackeensolution.mystore.models.Category
-import com.yackeensolution.mystore.views.ProductsActivity
+import com.yackeensolution.mystore.views.homeTabActivities.ProductsActivity
 
 
 class HomeFragment : Fragment() {

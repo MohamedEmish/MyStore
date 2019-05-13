@@ -58,22 +58,13 @@ class ProductsToOrderAdapter(private val mContext: Context?) : ListAdapter<Produ
 
     inner class ProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var productToOrderImage: ImageView
-        var productToOrderTitle: TextView
-        var newPrice: TextView
-        var oldPrice: TextView
-        var productAmount: TextView
-        var oldPriceEgp: TextView
+        var productToOrderImage: ImageView = itemView.findViewById(R.id.iv_product_to_order_image)
+        var productToOrderTitle: TextView = itemView.findViewById(R.id.tv_product_to_order_title)
+        var newPrice: TextView = itemView.findViewById(R.id.tv_product_to_order_new_price)
+        var oldPrice: TextView = itemView.findViewById(R.id.tv_product_to_order_old_price)
+        var productAmount: TextView = itemView.findViewById(R.id.tv_product_to_order_amount)
+        var oldPriceEgp: TextView = itemView.findViewById(R.id.tv_product_to_order_egp)
 
-        init {
-            productToOrderImage = itemView.findViewById(R.id.iv_product_to_order_image)
-            productToOrderTitle = itemView.findViewById(R.id.tv_product_to_order_title)
-            newPrice = itemView.findViewById(R.id.tv_product_to_order_new_price)
-            oldPrice = itemView.findViewById(R.id.tv_product_to_order_old_price)
-            oldPriceEgp = itemView.findViewById(R.id.tv_product_to_order_egp)
-            productAmount = itemView.findViewById(R.id.tv_product_to_order_amount)
-
-        }
     }
 
     companion object {

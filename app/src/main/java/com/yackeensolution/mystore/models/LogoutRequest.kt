@@ -9,9 +9,6 @@ class LogoutRequest(@SerializedName("UserId")
 
     @SerializedName("DeviceToken")
     @Expose
-    var deviceToken: String = ""
+    var deviceToken: String = "string"
 
-    init {
-        this.deviceToken = "string"
-    }
 }

@@ -12,7 +12,6 @@ import com.yackeensolution.mystore.models.OrderDetailsResponse
 import com.yackeensolution.mystore.models.OrderRequest
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.functions.Consumer
 import io.reactivex.schedulers.Schedulers
 import retrofit2.Call
 import retrofit2.Callback
@@ -29,9 +28,9 @@ class OrdersViewModel(application: Application) : AndroidViewModel(application) 
                 retrofitClass.getMyOrders(context)
                         .subscribeOn(Schedulers.io())
                         .observeOn(AndroidSchedulers.mainThread())
-                        .subscribe(Consumer<List<Order>> { orders ->
+                        .subscribe { orders ->
                             data.setValue(orders)
-                        }))
+                        })
         return data
     }
 
@@ -59,9 +58,9 @@ class OrdersViewModel(application: Application) : AndroidViewModel(application) 
                 retrofitClass.getOrderDetail(context, orderId)
                         .subscribeOn(Schedulers.io())
                         .observeOn(AndroidSchedulers.mainThread())
-                        .subscribe(Consumer<OrderDetailsResponse> { details ->
+                        .subscribe { details ->
                             data.setValue(details)
-                        }))
+                        })
         return data
     }
 

@@ -51,10 +51,6 @@ class CartAdapter(private val mContext: Context?) : ListAdapter<Product, CartAda
         holder.newPrice.text = newPrice.toString()
     }
 
-    private fun getMemberAt(position: Int): Product {
-        return getItem(position)
-    }
-
     fun setOnItemClickListener(listener: OnItemClickListener) {
         this.listener = listener
     }
@@ -89,29 +85,20 @@ class CartAdapter(private val mContext: Context?) : ListAdapter<Product, CartAda
 
     inner class CartViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        var productImage: ImageView
-        var cartTitle: TextView
-        var newPrice: TextView
-        var oldPrice: TextView
-        var productAmount: TextView
-        var oldPriceEgp: TextView
-        var deleteProduct: ImageView
-        var addOne: ImageView
-        var minusOne: ImageView
+        var productImage: ImageView = itemView.findViewById(R.id.iv_cart_image)
+        var cartTitle: TextView = itemView.findViewById(R.id.tv_cart_title)
+        var newPrice: TextView = itemView.findViewById(R.id.tv_cart_new_price)
+        var oldPrice: TextView = itemView.findViewById(R.id.tv_cart_old_price)
+        var productAmount: TextView = itemView.findViewById(R.id.tv_cart_amount)
+        var oldPriceEgp: TextView = itemView.findViewById(R.id.tv_cart_old_price_egp)
+        private var deleteProduct: ImageView = itemView.findViewById(R.id.iv_delete_image)
+        private var addOne: ImageView = itemView.findViewById(R.id.iv_cart_plus)
+        private var minusOne: ImageView = itemView.findViewById(R.id.iv_cart_minus)
 
         init {
-            productImage = itemView.findViewById(R.id.iv_cart_image)
-            productAmount = itemView.findViewById(R.id.tv_cart_amount)
-            newPrice = itemView.findViewById(R.id.tv_cart_new_price)
-            oldPrice = itemView.findViewById(R.id.tv_cart_old_price)
-            deleteProduct = itemView.findViewById(R.id.iv_delete_image)
-            addOne = itemView.findViewById(R.id.iv_cart_plus)
-            minusOne = itemView.findViewById(R.id.iv_cart_minus)
-            cartTitle = itemView.findViewById(R.id.tv_cart_title)
-            oldPriceEgp = itemView.findViewById(R.id.tv_cart_old_price_egp)
 
 
-            itemView.setOnClickListener { v ->
+            itemView.setOnClickListener {
                 if (listener != null) {
                     val position = adapterPosition
                     if (listener != null && position != RecyclerView.NO_POSITION) {
@@ -120,7 +107,7 @@ class CartAdapter(private val mContext: Context?) : ListAdapter<Product, CartAda
                 }
             }
 
-            deleteProduct.setOnClickListener { v ->
+            deleteProduct.setOnClickListener {
                 if (deleteListener != null) {
                     val position = adapterPosition
                     if (deleteListener != null && position != RecyclerView.NO_POSITION) {
@@ -129,7 +116,7 @@ class CartAdapter(private val mContext: Context?) : ListAdapter<Product, CartAda
                 }
             }
 
-            addOne.setOnClickListener { v ->
+            addOne.setOnClickListener {
                 if (addListener != null) {
                     val position = adapterPosition
                     if (addListener != null && position != RecyclerView.NO_POSITION) {
@@ -138,7 +125,7 @@ class CartAdapter(private val mContext: Context?) : ListAdapter<Product, CartAda
                 }
             }
 
-            minusOne.setOnClickListener { v ->
+            minusOne.setOnClickListener {
                 if (minusListener != null) {
                     val position = adapterPosition
                     if (minusListener != null && position != RecyclerView.NO_POSITION) {

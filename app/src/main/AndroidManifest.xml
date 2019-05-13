@@ -13,52 +13,53 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".views.logActivities.NoInternetConnection"></activity>
         <activity
-            android:name=".views.OrderDetailsActivity"
-            android:parentActivityName=".views.MyOrdersActivity" />
+            android:name=".views.homeTabActivities.OrderDetailsActivity"
+            android:parentActivityName=".views.meTabActivities.MyOrdersActivity" />
         <activity
-            android:name=".views.PlaceOrderActivity"
-            android:parentActivityName=".views.CartActivity" />
-        <activity android:name=".views.SearchResultsActivity" />
+            android:name=".views.homeTabActivities.PlaceOrderActivity"
+            android:parentActivityName=".views.homeTabActivities.CartActivity" />
+        <activity android:name=".views.homeTabActivities.SearchResultsActivity" />
         <activity
-            android:name=".views.AddReviewActivity"
-            android:parentActivityName=".views.ProductReviewsActivity" />
+            android:name=".views.homeTabActivities.AddReviewActivity"
+            android:parentActivityName=".views.homeTabActivities.ProductReviewsActivity" />
         <activity
-            android:name=".views.ProductReviewsActivity"
-            android:parentActivityName=".views.ProductDetailsActivity" />
-        <activity android:name=".views.ConfirmCodeActivity" />
-        <activity android:name=".views.ForgetPasswordActivity" />
-        <activity android:name=".views.AboutUsActivity" />
+            android:name=".views.homeTabActivities.ProductReviewsActivity"
+            android:parentActivityName=".views.homeTabActivities.ProductDetailsActivity" />
+        <activity android:name=".views.logActivities.ConfirmCodeActivity" />
+        <activity android:name=".views.logActivities.ForgetPasswordActivity" />
+        <activity android:name=".views.aboutUsTabActivities.AboutUsActivity" />
         <activity
-            android:name=".views.BranchesActivity"
-            android:parentActivityName=".views.MainActivity" />
+            android:name=".views.aboutUsTabActivities.BranchesActivity"
+            android:parentActivityName=".views.logActivities.MainActivity" />
         <activity
-            android:name=".views.FilterResultsActivity"
-            android:parentActivityName=".views.MainActivity"
+            android:name=".views.homeTabActivities.FilterResultsActivity"
+            android:parentActivityName=".views.logActivities.MainActivity"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".views.MyOrdersActivity" />
+        <activity android:name=".views.meTabActivities.MyOrdersActivity" />
         <activity
-            android:name=".views.SignUpActivity"
+            android:name=".views.logActivities.SignUpActivity"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".views.MyReviewsActivity" />
+        <activity android:name=".views.meTabActivities.MyReviewsActivity" />
         <activity
-            android:name=".views.MyProfileActivity"
+            android:name=".views.meTabActivities.MyProfileActivity"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".views.MyFavouritesActivity" />
+        <activity android:name=".views.meTabActivities.MyFavouritesActivity" />
         <activity
-            android:name=".views.ContactUsActivity"
-            android:parentActivityName=".views.MainActivity" />
+            android:name=".views.aboutUsTabActivities.ContactUsActivity"
+            android:parentActivityName=".views.logActivities.MainActivity" />
         <activity
-            android:name=".views.ProductDetailsActivity"
-            android:parentActivityName=".views.ProductsActivity" />
+            android:name=".views.homeTabActivities.ProductDetailsActivity"
+            android:parentActivityName=".views.homeTabActivities.ProductsActivity" />
         <activity
-            android:name=".views.ProductsActivity"
-            android:parentActivityName=".views.MainActivity" />
+            android:name=".views.homeTabActivities.ProductsActivity"
+            android:parentActivityName=".views.logActivities.MainActivity" />
         <activity
-            android:name=".views.CartActivity"
-            android:parentActivityName=".views.MainActivity" />
+            android:name=".views.homeTabActivities.CartActivity"
+            android:parentActivityName=".views.logActivities.MainActivity" />
         <activity
-            android:name=".views.SplashScreen"
+            android:name=".views.logActivities.SplashScreen"
             android:theme="@style/AppFullScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -66,7 +67,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".views.MainActivity">
+        <activity android:name=".views.logActivities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
@@ -96,7 +97,7 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name=".views.LoginActivity" />
+        <activity android:name=".views.logActivities.LoginActivity" />
     </application>
 
 </manifest>

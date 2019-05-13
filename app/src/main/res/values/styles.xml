@@ -38,10 +38,4 @@
     </style>
 
 
-    <style name="FacebookLoginButton">
-        <item name="android:textSize">14sp</item>
-        <item name="android:background">@drawable/ic_facebook</item>
-    </style>
-
-
 </resources>
