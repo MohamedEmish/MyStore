@@ -3,10 +3,10 @@
 
 # Talent Store App
 
-> This app is a published app of YackeenSolutions where i had an internship
-> I was asked to rebuild it as a part of the internship
-> I made some changes in the design and code style
-> This app is written in kotlin
+- This app is a official app of YackeenSolutions, where i had an internship.
+- I was asked to rebuild it as a part of the internship.
+- I made some changes in the design and code style.
+- This app is written in kotlin.
 
 
 # Screenshots
@@ -39,6 +39,6 @@
 
 ## Reach out to me at one of the following places!
 
--- Website at <a href="emish52020@gmail" target="_blank">`myEmail`</a>
+- Mail me at <a href="emish52020@gmail" target="_blank">`Emish52020@gmail`</a>
 
 
