@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yackeensolution.mystore">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".views.OrderDetailsActivity"
+            android:parentActivityName=".views.MyOrdersActivity" />
+        <activity
+            android:name=".views.PlaceOrderActivity"
+            android:parentActivityName=".views.CartActivity" />
+        <activity android:name=".views.SearchResultsActivity" />
+        <activity
+            android:name=".views.AddReviewActivity"
+            android:parentActivityName=".views.ProductReviewsActivity" />
+        <activity
+            android:name=".views.ProductReviewsActivity"
+            android:parentActivityName=".views.ProductDetailsActivity" />
+        <activity android:name=".views.ConfirmCodeActivity" />
+        <activity android:name=".views.ForgetPasswordActivity" />
+        <activity android:name=".views.AboutUsActivity" />
+        <activity
+            android:name=".views.BranchesActivity"
+            android:parentActivityName=".views.MainActivity" />
+        <activity
+            android:name=".views.FilterResultsActivity"
+            android:parentActivityName=".views.MainActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".views.MyOrdersActivity" />
+        <activity
+            android:name=".views.SignUpActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".views.MyReviewsActivity" />
+        <activity
+            android:name=".views.MyProfileActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".views.MyFavouritesActivity" />
+        <activity
+            android:name=".views.ContactUsActivity"
+            android:parentActivityName=".views.MainActivity" />
+        <activity
+            android:name=".views.ProductDetailsActivity"
+            android:parentActivityName=".views.ProductsActivity" />
+        <activity
+            android:name=".views.ProductsActivity"
+            android:parentActivityName=".views.MainActivity" />
+        <activity
+            android:name=".views.CartActivity"
+            android:parentActivityName=".views.MainActivity" />
+        <activity
+            android:name=".views.SplashScreen"
+            android:theme="@style/AppFullScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.LoginActivity" />
+    </application>
+
+</manifest>

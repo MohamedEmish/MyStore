@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="category_array">
+        <item>@string/filter_by_category</item>
+        <item>@string/educational_toys</item>
+        <item>@string/baby_toys</item>
+        <item>@string/lego</item>
+        <item>@string/scientific_toys</item>
+        <item>@string/solar_power_toys</item>
+        <item>@string/puzzles</item>
+        <item>@string/collective_games</item>
+        <item>@string/construction_and_forming</item>
+        <item>@string/assembling_games</item>
+        <item>@string/iq_games_for_adults</item>
+        <item>@string/art_corner</item>
+        <item>@string/handmade_crafts</item>
+    </string-array>
+
+    <string-array name="age_range_array">
+        <item>@string/filter_by_age_range</item>
+        <item>0 - 3</item>
+        <item>3 - 6</item>
+        <item>6 - 12</item>
+        <item>@string/above_twelve</item>
+    </string-array>
+
+    <string-array name="gender_array">
+        <item>@string/filter_by_gender</item>
+        <item>@string/male</item>
+        <item>@string/female</item>
+    </string-array>
+
+    <string-array name="intelligence_array">
+        <item>@string/filter_by_intelligence</item>
+        <item>@string/logical_mathematical</item>
+        <item>@string/bodily_kinesthetic</item>
+        <item>@string/natural</item>
+        <item>@string/linguistic</item>
+        <item>@string/musical</item>
+        <item>@string/visual_spatial</item>
+        <item>@string/exploratory</item>
+    </string-array>
+
+    <string-array name="players_number_array">
+        <item>@string/filter_by_number_of_players</item>
+        <item>@string/one_player</item>
+        <item>@string/two_players</item>
+        <item>@string/three_and_more</item>
+    </string-array>
+</resources>
