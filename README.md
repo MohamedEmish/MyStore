@@ -6,6 +6,7 @@
 > This app is a published app of YackeenSolutions where i had an internship
 > I was asked to rebuild it as a part of the internship
 > I made some changes in the design and code style
+> This app is written in kotlin
 
 **Badges will go here**
 
@@ -34,17 +35,17 @@
 <img src ="Pics/11.jpg" height = 500><img src ="Pics/12.jpg" height = 500>
 <img src ="Pics/13.jpg" height = 500><img src ="Pics/20.jpg" height = 500>
 
-## Table of Contents (Optional)
+# Liberaries used
 
-> If you're `README` has a lot of info, section headers might be nice.
 
-- [Installation](#installation)
-- [Features](#features)
-- [Contributing](#contributing)
-- [Team](#team)
-- [FAQ](#faq)
-- [Support](#support)
-- [License](#license)
+- [Kotlin programing language](#kotlin-stdlib-jdk7:1.3.31)
+- [Retrofit](#Retrofit 2.5.0)
+- [AutoDimension](#AutoDimension:1.0.4)
+- [Facebook](#facebook-login:4.41.0)
+- [MVVM design pattern](#lifecycle-viewmodel:2.0.0)
+- [Glide](#glide:4.9.0)
+- [GIF](#android-gif-drawable:1.2.15)
+- [Rx-Java](#rxjava:2.1.9)
 
 
 ---
