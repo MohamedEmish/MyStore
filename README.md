@@ -1,15 +1,11 @@
 # MyStore
 <img src ="Pics/logo.png" height = 250 ></a>
 
-***INSERT GRAPHIC HERE (include hyperlink in image)***
+# Talent Store App
 
-# Repository Title Goes Here
-
-> Subtitle or Short Description Goes Here
-
-> ideally one sentence
-
-> include terms/tags that can be searched
+> This app is a published app of YackeenSolutions where i had an internship
+> I was asked to rebuild it as a part of the internship
+> I made some changes in the design and code style
 
 **Badges will go here**
 
@@ -28,33 +24,15 @@
 
 - For more on these wonderful ~~badgers~~ badges, refer to <a href="http://badges.github.io/badgerbadgerbadger/" target="_blank">`badgerbadgerbadger`</a>.
 
-***INSERT ANOTHER GRAPHIC HERE***
+# Screenshots
 
-[![INSERT YOUR GRAPHIC HERE](http://i.imgur.com/dt8AUb6.png)]()
-
-- Most people will glance at your `README`, *maybe* star it, and leave
-- Ergo, people should understand instantly what your project is about based on your repo
-
-> Tips
-
-- HAVE WHITE SPACE
-- MAKE IT PRETTY
-- GIFS ARE REALLY COOL
-
-> GIF Tools
-
-- Use <a href="http://recordit.co/" target="_blank">**Recordit**</a> to create quicks screencasts of your desktop and export them as `GIF`s.
-- For terminal sessions, there's <a href="https://github.com/chjj/ttystudio" target="_blank">**ttystudio**</a> which also supports exporting `GIF`s.
-
-**Recordit**
-
-![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
-
-**ttystudio**
-
-![ttystudio GIF](https://raw.githubusercontent.com/chjj/ttystudio/master/img/example.gif)
-
----
+<img src ="Pics/1.jpg" height = 500><img src ="Pics/2.jpg" height = 500>
+<img src ="Pics/3.jpg" height = 500><img src ="Pics/4.jpg" height = 500>
+<img src ="Pics/5.jpg" height = 500><img src ="Pics/6.jpg" height = 500>
+<img src ="Pics/7.jpg" height = 500><img src ="Pics/8.jpg" height = 500>
+<img src ="Pics/9.jpg" height = 500><img src ="Pics/10.jpg" height = 500>
+<img src ="Pics/11.jpg" height = 500><img src ="Pics/12.jpg" height = 500>
+<img src ="Pics/13.jpg" height = 500><img src ="Pics/20.jpg" height = 500>
 
 ## Table of Contents (Optional)
 
